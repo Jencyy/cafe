@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+   <link href="images/menu-1.png" rel="icon"> 
+    <!-- line awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- font roboto flex -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500&display=swap">
+    <!-- font questrial -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- custome css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- media css -->
+    <link href="css/media.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled ">
+                <li><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
+                <li><a href="javascript:void(0)" class="text-decoration-none text-body">Menu</a></li>
+                <li><a href="blog.html" class="text-decoration-none text-body">Blog</a></li>
+                <li><a href="resevation.html" class="text-decoration-none text-body">Resevation</a></li>
+                <li><a href="location.html" class="text-decoration-none text-body">Location</a></li>
+                <li><a href="about.html" class="text-decoration-none text-body">About</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- top bar -->
+    <div class="topbar bg-secondary d-lg-flex text-white align-items-md-center d-none fixed-top">
+        <div class="container">
+            <div class="row d-md-flex justify-content-md-between">
+                <div class="top-discount col-md-3">
+                    10% of on all product
+                </div>
+                <div class="icon d-md-flex col-md-1 justify-content-md-between">
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-shopping-cart"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-search"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-cog"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <header class="fixed-top">
+        <nav class="fw-bold">
+            <div class="container d-flex  justify-content-between align-items-center">
+                <div class="logo">
+                    <a class="text-decoration-none" href="index.html"><img src="images/logo.png" alt="logo"
+                            class="img-fluid"></a>
+                </div>
+                <ul class="list-unstyled d-lg-flex d-none">
+                    <li class="px-3">
+                        <a class="text-decoration-none text-secondary" href="index.html">Home</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="#menu">Menu</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="blog.html">Blog</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="resevation.html">Resevation</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="location.html">Location</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="about.html">About us</a>
+                    </li>
+                </ul>
+                <div class="menu d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <i class="las la-coffee la-2x" style="color: #6e4227;"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- banner -->
+        <section>
+
+            <div class="banner">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/mainbanner.png " alt="mainbanner" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item  mt-5 pt-5 mb-5 ">
+                            <div class="row d-flex align-items-center  position-relative">
+                                <div class="col-3">
+                                    <img src="images/banner-2.png" alt="banner-2" class="position-absolute banner-2">
+                                    <img src="images/banner-3.png" alt="banner-3" class="position-absolute banner-3">
+                                </div>
+                                <img src="images/banner-1.png" alt="banner-1" class="d-block col-4">
+                                <div class="col-4 d-none d-md-block">
+                                    <small class="text-body">Black coffee is awesome.</small>
+                                    <h1 class="text-primary">Time To Discover
+                                        Coffee House</h1>
+                                    <small class="text-body">Experience the decibels like your ears deserve to.
+                                        Safe for the ears, very for the heart. A treat to your ears.</small><br>
+                                    <button class="button-cafe  mt-2">Explore more</button>
+                                </div>
+                                <div class="col-1">
+                                    <img src="images/banner-4.png" alt="banner-4" class="position-absolute banner-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--experiance-->
+        <section>
+            <div class="experiance divide">
+                <div class="container">
+                    <div class="row d-lg-flex align-items-lg-center">
+                        <div class="col-lg-5">
+                            <h2 class="text-primary">27 Years Of Experience</h2>
+                            <p class="text-body">The coffee shop was a popular place to hang out and meet up with
+                                friends. It was a
+                                typical coffee shop with wood paneled walls, and tables set up in the middle of the
+                                room. The smell of coffee hung in the air, enticing the customers to come in.
+                                <br>
+                                <br>
+                                There is a place called the coffee shop I used to go to all the time. They have a lot of
+                                different types of coffees and they also have pastries, donuts, and muffins. I always go
+                                for a muffin and a latte. The coffee shop is always crowded because it is a very popular
+                                place.
+                            </p>
+                            <a href="about.html" class="button-cafe  mt-2 text-decoration-none">Buy now</a>
+
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="exp-img position-relative text-center">
+                                <img src="images/exp-1.png" alt="exp-1" class="img-fluid">
+                                <div class="overlay d-flex align-items-center">
+                                    <img src="images/exp-2.png" alt="exp-2" class="ratio ratio-4x3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- info -->
+        <section>
+            <div class="info-coffee">
+                <div class="container">
+                    <div class="row d-flex justify-content-md-between">
+                        <div class="col-lg-4 p-4">
+                            <div class="d-flex align-items-start my-3">
+                                <div class="coffee-icon m-2"><img src="images/cup.png" alt="cup" class="img-fluid">
+                                </div>
+                                <div class="coffee-info ">
+                                    <h5 class="text-primary m-0">The Perfect cup</h5>
+                                    <small class="text-body fs-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Culpa debitis?</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start my-3">
+                                <div class="coffee-icon m-2"><img src="images/mokcup.png" alt="mokcup"
+                                        class="img-fluid"></div>
+                                <div class="coffee-info ">
+                                    <h5 class="text-primary m-0 fw-normal">The Moka Pot</h5>
+                                    <small class="text-body fs-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Culpa debitis?</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start my-3">
+                                <div class="coffee-icon m-2"><img src="images/been.png" alt="been" class="img-fluid">
+                                </div>
+                                <div class="coffee-info ">
+                                    <h5 class="text-primary m-0 fw-normal">Super Beans Coffee</h5>
+                                    <small class="text-body fs-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Culpa debitis?</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="info-img position-relative">
+                                <img src="images/info-1.png" alt="info-1" class="img-fluid">
+                                <div class="overlay">
+                                    <img src="images/info-2.png" alt="info-2" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-4">
+                            <div class="d-flex align-items-start my-3">
+                                <div class="coffee-icon m-2"><img src="images/mashine.png" alt="mashine"
+                                        class="img-fluid">
+                                </div>
+                                <div class="coffee-info ">
+                                    <h5 class="text-primary m-0 fw-normal"> Coffee Mashine</h5>
+                                    <small class="text-body fs-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Culpa debitis?</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start my-3">
+                                <div class="coffee-icon m-2"><img src="images/jug.png" alt="jug" class="img-fluid">
+                                </div>
+                                <div class="coffee-info ">
+                                    <h5 class="text-primary m-0 fw-normal">Fresh Press</h5>
+                                    <small class="text-body fs-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Culpa debitis?</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start my-3">
+                                <div class="coffee-icon m-2"><img src="images/papercup.png" alt="papercup"
+                                        class="img-fluid"></div>
+                                <div class="coffee-info ">
+                                    <h5 class="text-primary m-0 fw-normal">Coffee To Go</h5>
+                                    <small class="text-body fs-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Culpa debitis?</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- offer -->
+        <section>
+            <div class="offer divide">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="head-offer  text-center col-md-4">
+                            <h2 class="text-primary">Our Delicious Offer</h2>
+                            <div><img src="images/offer-been-head.png" alt="offer-been-head" class="position-relative">
+                            </div>
+                            <caption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptatum?</caption>
+                        </div>
+                    </div>
+                    <div class="row d-lg-flex align-items-center text-center">
+                        <div class="col-md-3 p-2">
+                            <div>
+                                <img src="images/offer-1.png" alt="offer-1">
+                            </div>
+                            <h3 class="text-primary pt-2">Type Of Coffee</h3>
+                            <small class="text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo
+                                natus quae,
+                                incidunt corporis doloremque .</small>
+                        </div>
+                        <div class="col-md-3 p-2">
+                            <div>
+                                <img src="images/offer-2.png" alt="offer-2">
+                            </div>
+                            <h3 class="text-primary pt-2">Bean Varieties</h3>
+                            <small class="text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo
+                                natus quae,
+                                incidunt corporis doloremque .</small>
+                        </div>
+                        <div class="col-md-3 p-2">
+                            <div>
+                                <img src="images/offer-4.png" alt="offer-4">
+                            </div>
+                            <h3 class="text-primary pt-2">Coffee & Pastry</h3>
+                            <small class="text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo
+                                natus quae, incidunt
+                                corporis doloremque .</small>
+                        </div>
+                        <div class="col-md-3 p-2">
+                            <div>
+                                <img src="images/offer-3.png" alt="offer-3">
+                            </div>
+                            <h3 class="text-primary pt-2">Coffee To Go</h3>
+                            <small class="text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo
+                                natus quae, incidunt
+                                corporis doloremque .</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- categories -->
+        <section>
+            <div class="categories">
+                <div class="container">
+                    <div class="row d-lg-flex justify-content-lg-center">
+                        <div class="col-12 cate-head text-center">
+                            <h3 class="text-primary m-0">Top Categories</h3>
+                            <img src="images/offer-been-head.png" alt="offer-been-head">
+                        </div>
+                        <div class="d-xxl-flex justify-content-lg-between col-xxl-12  cat-pic mt-4">
+                            <div class="col-xxl-4 mt-xl-2 mt-3">
+                                <div class="categ">
+                                    <div class="cat-overlay"></div>
+                                    <img src="images/cat-1.png" alt="cat-1" class="rounded-5">
+                                    <div class="cat-detail fadeIn-left fadeIn-top">
+                                        <h4>Espresso Hot </h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xxl-4  mt-xl-2 mt-3">
+                                <div class="categ">
+                                    <div class="cat-overlay"></div>
+                                    <img src="images/cat-2.png" alt="cat-2" class="rounded-5">
+                                    <div class="cat-detail fadeIn-top">
+                                        <h4>
+                                            Customize Latte Art Coffee
+                                        </h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xxl-4  mt-xl-2 mt-3">
+                                <div class="categ">
+                                    <div class="cat-overlay"></div>
+                                    <img src="images/cat-3.png" alt="cat-3" class="rounded-5">
+                                    <div class="cat-detail fadeIn-right fadeIn-top ">
+                                        <h4>Frappuccino</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- customer-trust -->
+        <section>
+            <div class="customer-trust divide">
+                <div class="container">
+                    <div class="row d-lg-flex align-items-center justify-content-between">
+                        <div class="col-lg-6 position-relative">
+                            <div class="">
+                                <div class="ct-info text-primary position-absolute fs-2 ">
+                                    More than
+                                    <h4 class="display-2 fw-bolder m-0">5400</h4>
+                                    Customers<br>
+                                    Trust Us
+                                </div>
+                            </div>
+                            <div class=" d-flex justify-content-lg-end">
+                                <div class="cust-trust">
+                                    <img src="images/customer-trust.png" alt="customer-trust">
+                                    <div class="overlay">
+                                        <img src="images/customer-trust-2.png" alt="customer-trust-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <h3 class="text-primary fw-medium">Become Our Dealer</h3>
+                            <p class="text-body">Curabitur sollicitudin ultrices tortor, eget pulvinar risus cursus eu.
+                                Vivamus sit amet odio massa. Vivamus dapibus elementum tellus nec fermentum. Sed blandit
+                                condimentum molestie. In hac habitasse platea dictumst. Etiam fringilla a elit at
+                                ornare. printing and typesetting industry.Lorem Ipsum is simply dummy </p>
+
+                            <a href="resevation.html" class="button-cafe  mt-2 text-decoration-none">Contect us</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service -->
+        <section>
+            <div class="service">
+                <div class="container">
+                    <div class="row d-lg-flex align-items-center">
+                        <div class="col-md-3 d-flex align-items-center">
+                            <i class="las la-shipping-fast la-3x m-2" style="color: #6e4227;"></i> <span
+                                class=" text-primary fw-medium">Free Shipping</span>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <i class="las la-people-carry la-3x m-2" style="color: #6e4227;"></i><span
+                                class=" text-primary fw-medium">Cash on Delivary</span>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <i class="las la-hand-holding-heart la-3x m-2" style="color: #6e4227;"></i><span
+                                class=" text-primary fw-medium">Special Gift Card</span>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <i class="las la-headset la-3x m-2" style="color: #6e4227;"></i><span
+                                class=" text-primary fw-medium ">24*7 Customer Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- menu -->
+        <section>
+            <div id="menu" class="divide">
+                <div class="container">
+                    <div class="row d-lg-flex align-items-lg-center justify-content-lg-center">
+                        <div class="col-12 text-center">
+                            <p class="text-primary m-0 display-5 fw-medium">Our menu</p>
+                            <img src="images/offer-been-head.png" alt="offer-been-head">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="menu-bar d-flex align-items-center justify-content-center py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-1.png" alt="menu-profile-1">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Cafe latte</span><span>5.0$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center  justify-content-center py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-5.png" alt="menu-profile-5">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Iced coffee</span><span>3.0$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center  justify-content-center py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-3.png" alt="menu-profile-3">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Espresso Shot</span><span>2.5$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center  justify-content-center py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-2.png" alt="menu-profile-2">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Mocha</span><span>4.5$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center justify-content-center  py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-4.png" alt="menu-profile-4">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Americano Caffeine</span><span>3.2$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="menu-img position-relative text-center">
+                                <img src="images/menu-1.png" alt="menu-1" class="img-fluid">
+                                <div class="overlay">
+                                    <img src="images/menu-2.png" alt="menu-2" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="menu-bar d-flex align-items-center justify-content-center  py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-5.png" alt="menu-profile-5">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Cappuccino</span><span>3.5$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center justify-content-center  py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-1.png" alt="menu-profile-1">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Cold Brew Cappuccino</span><span>3.0$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center justify-content-center  py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-3.png" alt="menu-profile-3">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Flat White</span><span>5.0$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center justify-content-center  py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-4.png" alt="menu-profile-4">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Frappuccino</span><span>4.5$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-flex align-items-center justify-content-center  py-3">
+                                <div class="bar-menu-img me-3">
+                                    <img src="images/menu-profile-2.png" alt="menu-profile-2">
+                                </div>
+                                <div class="menu-info text-body">
+                                    <div class="prize fw-medium text-secondary d-flex justify-content-between">
+                                        <span>Hot Chocolate</span><span>2.5$</span>
+                                    </div>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- coffee product -->
+        <section>
+            <div class="coffee-product ">
+                <div class="product-bg d-flex align-items-center justify-content-center">
+                    <div class="product-description text-center text-white col-12">
+                        <h2>Coffee Product</h2>
+                        <img src="images/title-separator.png" alt="title-separator">
+                        <p class="pt-2">Lorem Ipsum is simply dummy text of the<br>
+                            printing and typesetting industry.Lorem Ipsum is simply dummy Lorem Ipsum
+                        </p>
+                        <button class="button-cafe2" role="button">view-more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- happy visitor -->
+        <section>
+            <div class="happy-visitor divide ">
+
+                <div class="container">
+                    <div class="row d-flex">
+                        <div class="col-lg-12  d-lg-flex justify-content-lg-center">
+                            <div class="col-lg-4 col-12 text-primary text-center">
+                                <h3 class="fw-bolder">Our Happy Visitor</h3>
+                                <img src="images/offer-been-head.png" alt="offer-been-head">
+                                <p class="text-body">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry.Lorem Ipsum is simply dummy Lorem Ipsum </p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 d-lg-flex align-items-lg-center justify-content-lg-center">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators text-secondary">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active bg-primary" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2" class="bg-primary"></button>
+                                </div>
+                                <div class="carousel-inner ">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex">
+
+                                            <div class="card col-lg-6 col-12 rounded-4 m-2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        <img src="images/viewer-1.png" alt="viewer-1">
+                                                        <span class="fs-3 text-primary">Destine</span>
+                                                    </h5>
+                                                    <p class="card-text">With supporting text below as a natural lead-in
+                                                        to
+                                                        additional Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit. Consectetur, autem!</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card col-lg-6 col-12  rounded-4 m-2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        <img src="images/viewer-2.png" alt="viewer-2">
+                                                        <span class="fs-3 text-primary">Destine</span>
+                                                    </h5>
+                                                    <p class="card-text">With supporting text below as a natural lead-in
+                                                        to
+                                                        additional Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit. Consectetur, autem!</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <div class="d-flex">
+                                            <div class="card col-lg-6 col-12 rounded-4 m-2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        <img src="images/viewer-2.png" alt="viewer-2">
+                                                        <span class="fs-3 text-primary">Destine</span>
+                                                    </h5>
+                                                    <p class="card-text">With supporting text below as a natural lead-in
+                                                        to
+                                                        additional Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit. Consectetur, autem!</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card col-lg-6 col-12 rounded-4 m-2 ">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        <img src="images/viewer-1.png" alt="viewer-1">
+                                                        <span class="fs-3 text-primary">Destine</span>
+                                                    </h5>
+                                                    <p class="card-text">With supporting text below as a natural lead-in
+                                                        to
+                                                        additional Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit. Consectetur, autem!</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- blog -->
+        <section>
+            <div class="blog divide">
+                <div class="blog-title text-primary text-center">
+                    <h3 class="text-bold">The Coffee Blog</h3>
+                    <img src="images/offer-been-head.png" alt="offer-been-head">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-2">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <img src="images/blog-1.png" class="card-img-top" alt="blog-1">
+                                    <div class="overlay ">
+                                        <img src="images/blog-4.png" alt="blog-4" class="card-img-top">
+                                    </div>
+                                </div>
+                                <div class="date-blog position-absolute text-bolder fs-5 text-center">13 March</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary">Mochha cup</h5>
+                                    <p class="card-text text-body">Curabitur sollicitudin ultrices tortor, eget pulvinar
+                                        risus cursus eu. Vivamus sit amet odio massa. Vivamus dapibus elementum tellus
+                                        nec fermentum. Sed blandit condimentum molestie. In hac habitasse platea
+                                        dictumst. </p>
+                                    <a href="#" class="button-cafe text-decoration-none">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <img src="images/blog-2.png" class="card-img-top" alt="blog-1">
+                                    <div class="overlay ">
+                                        <img src="images/blog-5.png" alt="blog-4" class="card-img-top">
+                                    </div>
+                                </div>
+                                <div class="date-blog position-absolute text-bolder fs-5 text-center">13 March</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary">Coffee Maker</h5>
+                                    <p class="card-text text-body">Curabitur sollicitudin ultrices tortor, eget pulvinar
+                                        risus cursus eu. Vivamus sit amet odio massa. Vivamus dapibus elementum tellus
+                                        nec fermentum. Sed blandit condimentum molestie. In hac habitasse platea
+                                        dictumst. </p>
+                                    <a href="#" role="button" class="button-cafe text-decoration-none">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <img src="images/blog-3.png" class="card-img-top" alt="blog-1">
+                                    <div class="overlay ">
+                                        <img src="images/blog-6.png" alt="blog-4" class="card-img-top">
+                                    </div>
+                                </div>
+                                <div class="date-blog position-absolute text-bolder fs-5 text-center">13 March</div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary">Brewing Guide</h5>
+                                    <p class="card-text text-body">Curabitur sollicitudin ultrices tortor, eget pulvinar
+                                        risus cursus eu. Vivamus sit amet odio massa. Vivamus dapibus elementum tellus
+                                        nec fermentum. Sed blandit condimentum molestie. In hac habitasse platea
+                                        dictumst. </p>
+                                    <a href="#" class="button-cafe text-decoration-none">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="pb-5">
+        <div class="container">
+            <div class="row d-lg-flex  align-items-lg-start">
+                <div class="col-md-6 col-xl-3">
+                    <div class="">
+                        <div class="logo">
+                            <a class="text-decoration-none" href="#"><img src="images/logo.png" alt="logo" class=""></a>
+                        </div>
+                        <div class="info">
+                            Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum
+                        </div>
+                        <div class="footer-icons mt-1">
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-instagram fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-square-facebook  fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-pinterest-p fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-twitter fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="fs-2 text-primary text-start pt-2">Contect us</h5>
+                    <div class="footer-loc pt-3 mt-0 mt-sm-3">
+                        <span><i class="fa-solid fa-location-dot fa-xl" style="color: #6e4227;"></i></span>
+                        <span>638 Amarica Stranfod Mailbon Star<br> <span class="ms-4"> MAIL:
+                                Israfilsupol836@gmail.com</span></span>
+
+                    </div>
+                    <div class="footer-phone pt-3">
+                        <span><i class="fa-solid fa-phone-volume fa-lg" style="color: #6e4227;"></i></span>
+                        <span>
+                            +7464 0187 3535 645
+                        </span>
+                    </div>
+                    <div class="footer-cou pt-3">
+                        <span><i class="fa-solid fa-user-tie fa-xl" style="color: #6e4227;"></i></span>
+                        <span>+9 659459 49594</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="fs-2 text-primary text-start pt-2">Opening hours</h5>
+                    <div class="open-hour text-secondary d-flex pt-3 mt-0 mt-sm-3">
+                        <div class="">
+                            <span>Monday </span><br>
+                            <span> Tuesday </span><br>
+                            <span>wednesday </span><br>
+                            <span>Thusday </span><br>
+                            <span>Friday </span><br>
+                            <span>Saturday </span><br>
+                            <span>Sunday </span><br>
+                        </div>
+                        <div class="ms-5">
+                            <div class="monday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="tuesday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="wednesday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="Thusday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="Friday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="Saturday">
+                                9:00 AM - 9:00 AM
+                            </div>
+                            <div class="Sunday">
+                                9:00 AM - 2:30 AM
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="fs-2 text-primary text-start pt-2">Resent news</h5>
+                    <div class="d-flex pt-3 align-items-center mt-0 mt-sm-3">
+                        <div class="footer-img">
+                            <img src="images/footer-1.png" alt="footer-1">
+                            <div class="overlay">
+                                <img src="images/footer-3.png" alt="footer-3">
+                            </div>
+                        </div>
+                        <div class="fotter-containt text-body ms-3 fw-medium">
+                            <u>
+                                Best Smell of Americano
+                                Coffee Trins
+
+                            </u>
+                        </div>
+                    </div>
+                    <div class="d-flex pt-3 align-items-center">
+                        <div class="footer-img"><img src="images/footer-2.png" alt="footer-2">
+                            <div class="overlay">
+                                <img src="images/footer-4.png" alt="footer-4">
+                            </div>
+                        </div>
+                        <div class="fotter-containt text-body ms-3 fw-medium">
+                            <u>
+                                Serious Place For Serious
+                                Coffee
+                            </u>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // $('.banner').slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     autoplay: true,
+        //     autoplaySpeed: 2000,
+        // });
+    </script>
+</body>
+
+</html>

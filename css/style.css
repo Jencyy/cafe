@@ -1,0 +1,321 @@
+:root {
+    --bs-primary-rgb: 110, 66, 39;
+    --bs-secondary-rgb: 78, 34, 5;
+    --roboto-flex: 'Roboto Flex';
+    --questrial: 'Questrial';
+    --bs-body-color-rgb: 91, 91, 91;
+
+
+}
+
+.divide {
+    padding: 100px 0;
+}
+
+.offcaanvas {
+    --bs-offcanvas-width: 140px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+body {
+    font-family: var(--roboto-flex);
+}
+
+.button-cafe {
+    border: 2px solid rgba(var(--bs-secondary-rgb), 0.8);
+    color: rgb(var(--bs-secondary-rgb));
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all .3s ease-in;
+}
+
+.button-cafe:hover {
+    background-color: rgb(var(--bs-secondary-rgb));
+    color: white;
+}
+
+.button-cafe2 {
+
+    color: rgb(var(--bs-secondary-rgb));
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all .3s ease-in;
+}
+
+.button-cafe2:hover {
+    background-color: rgb(var(--bs-secondary-rgb));
+    border: solid 2px rgb(var(--bs-secondary-rgb));
+    color: white;
+}
+
+/* topbar */
+.topbar {
+    height: 60px;
+    font-family: var(--questrial);
+}
+
+/* header */
+
+header {
+    margin-top: 60px;
+}
+
+header li a {
+    color: gray;
+    transition: all .5s ease-in;
+}
+
+header li a:hover {
+    color: rgb(var(--bs-secondary-rgb));
+}
+
+/* footer */
+footer {
+    background-color: rgba(249, 249, 249, 1);
+}
+
+.footer-img {
+    position: relative;
+}
+
+.footer-img:hover .overlay {
+    opacity: 1;
+}
+
+footer .logo img {
+    width: 140px;
+    height: 140px;
+}
+
+/* ===============================================================================================================================================================================INDEX=======================================================================================================================================================================================*/
+/* main */
+main {
+    margin-top: 50px;
+}
+
+/* banner */
+.banner .carousel-item .row .banner-2 {
+    top: 36px;
+    left: 150px;
+}
+
+.banner .carousel-item .row .banner-3 {
+    bottom: -30px;
+    left: 70px;
+}
+
+.banner .carousel-item .row .banner-4 {
+    top: 15px;
+    right: 30px;
+}
+
+/* exp */
+.exp-img:hover .overlay {
+    opacity: 1;
+}
+
+.exp-img:hover>img {
+    opacity: 0;
+}
+
+.exp-img>img {
+    transition: all 1s ease-out;
+}
+
+/* info */
+
+
+.info-img:hover .overlay {
+    opacity: 1;
+}
+
+.info-img:hover>img {
+    opacity: 0;
+}
+
+.info-img>img {
+    transition: all 1s ease-out;
+}
+
+/* offer */
+/* categories */
+.categories .cat-pic img {
+    width: 420px;
+    height: 420px;
+}
+
+.cat-detail {
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.cat-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 30px;
+}
+
+.categ {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.categ:hover .cat-overlay {
+    opacity: 1;
+}
+
+.categ:hover .cat-detail {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.fadeIn-left {
+    left: 20%;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+.fadeIn-right {
+    left: 80%;
+}
+
+/* customer-trust */
+.customer-trust .cust-trust {
+    position: relative;
+}
+
+.cust-trust:hover .overlay {
+    opacity: 1;
+}
+
+.cust-trust:hover>img {
+    opacity: 0;
+}
+
+.cust-trust>img {
+    transition: all 1s ease-out;
+}
+
+.ct-info {
+    z-index: 1;
+    top: 30px;
+    left: 160px;
+}
+
+/* service */
+.service {
+    background-color: rgba(249, 249, 249, 1);
+}
+
+/* menu */
+
+
+.menu-img:hover .overlay {
+    opacity: 1;
+}
+
+.menu-img:hover>img {
+    opacity: 0;
+}
+
+.menu-img>img {
+    transition: all 1s ease-out;
+}
+
+/* coffee product */
+.coffee-product {
+    background-image: url(../images/coffee-product.png);
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.product-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    flex-grow: 1;
+    height: 300px;
+}
+
+/* happy-visitor */
+.happy-visitor .card {
+    background-color: rgba(249, 249, 249, 1);
+}
+
+.carousel-indicators {
+    top: -20px;
+
+}
+
+/* blog */
+.date-blog {
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: rgb(var(--bs-secondary-rgb));
+    border-radius: 20px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover>img {
+    opacity: 0;
+}
+
+.card>img {
+    transition: all 1s ease-out;
+}
+
+/* ===============================================================================================================================================================================BLOGS=======================================================================================================================================================================================*/
+.blog-header {
+    background-image: url(../images/background.png);
+    margin-top: 200px;
+    height: 190px;
+}
+
+/* ===============================================================================================================================================================================About=======================================================================================================================================================================================*/

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+   <link href="images/menu-1.png" rel="icon"> 
+
+    <!-- line awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- font roboto flex -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500&display=swap">
+    <!-- font questrial -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- custome css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- media css -->
+    <link href="css/media.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled ">
+                <li><a href="index.html" class="text-decoration-none text-body">Home</a></li>
+                <li><a href="javascript:void(0)" class="text-decoration-none text-body">Menu</a></li>
+                <li><a href="blog.html" class="text-decoration-none text-body">Blog</a></li>
+                <li><a href="resevation.html" class="text-decoration-none text-body">Resevation</a></li>
+                <li><a href="location.html" class="text-decoration-none text-body">Location</a></li>
+                <li><a href="about.html" class="text-decoration-none  text-secondary">About</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- top bar -->
+    <div class="topbar bg-secondary d-lg-flex text-white align-items-md-center d-none fixed-top">
+        <div class="container">
+            <div class="row d-md-flex justify-content-md-between">
+                <div class="top-discount col-md-3">
+                    10% of on all product
+                </div>
+                <div class="icon d-md-flex col-md-1 justify-content-md-between">
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-shopping-cart"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-search"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-cog"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="las la-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <header class="fixed-top">
+        <nav class="fw-bold">
+            <div class="container d-flex  justify-content-between align-items-center">
+                <div class="logo">
+                    <a class="text-decoration-none" href="index.html"><img src="images/logo.png" alt="logo"
+                            class="img-fluid"></a>
+                </div>
+                <ul class="list-unstyled d-lg-flex d-none">
+                    <li class="px-3">
+                        <a class="text-decoration-none" href="index.html">Home</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="#menu">Menu</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="blog.html">Blog</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="resevation.html">Resevation</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none  text-secondary" href="location.html">Location</a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-decoration-none " href="about.html">About us</a>
+                    </li>
+                </ul>
+                <div class="menu d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <i class="las la-coffee la-2x" style="color: #6e4227;"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="blog-header text-white d-flex align-items-center justify-content-center">
+                <p class="fs-1 display-1">Home / Location </p>
+            </div>
+        </section>
+        <section>
+            <div class="location">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="location mt-4 text-center col-md-4 mb-4">
+                            <h2 class="text-primary m-0">Black Diamond</h2>
+                            <div><img src="images/offer-been-head.png" alt="offer-been-head" class="position-relative">
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex">
+                            <div class="col-md-6">
+                                <div class="info-img position-relative  m-1">
+                                    <img src="images/loc-1.png" alt="loc-1" class="img-fluid">
+                                    <div class="overlay">
+                                        <img src="images/loc-2.png" alt="loc-2" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-img position-relative  m-1">
+                                    <img src="images/loc-3.png" alt="loc-3" class="img-fluid">
+                                    <div class="overlay">
+                                        <img src="images/loc-4.png" alt="loc-4" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location mt-4 text-center col-md-4 mb-4">
+                            <h2 class="text-primary m-0">Midtown Cafe</h2>
+                            <div><img src="images/offer-been-head.png" alt="offer-been-head" class="position-relative">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 d-flex">
+                            <div class="col-sm-6">
+                                <div class="info-img position-relative  m-1">
+                                    <img src="images/loc-5.png" alt="loc-1" class="img-fluid">
+                                    <div class="overlay">
+                                        <img src="images/loc-6.png" alt="loc-2" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-img position-relative  m-1">
+                                    <img src="images/loc-7.png" alt="loc-7" class="img-fluid">
+                                    <div class="overlay">
+                                        <img src="images/loc-8.png" alt="loc-8" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="resevation divide">
+                <div class="container">
+                    <div class="row justify-content-center d-md-flex">
+                        <div class="reseva mt-4 text-center col-md-4">
+                            <h2 class="text-primary">Resevation Area</h2>
+                            <div><img src="images/offer-been-head.png" alt="offer-been-head" class="position-relative">
+                            </div>
+                        </div>
+                        <div class="col-xxl-12 d-xxl-flex mt-2">
+                            <div class="col-xxl-6 d-none d-xxl-block">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2613049.2938451516!2d8.20515307129255!3d46.379113149346985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1695999808849!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="col-12 col-xxl-6">
+                                <form class="text-primary">
+                                    <small>#Reservation
+                                    </small>
+                                    <h2>Book A Table</h2>
+                                    <div class="mb-3">
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="text" class="form-control" placeholder="Email Eddress"
+                                                aria-label="Email Eddress" aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="floatingPassword"
+                                                placeholder="Password">
+                                            <label for="floatingPassword">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 text-primary">
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1"> Branch 1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1"> Branch 2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1"> Branch 3</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-3 text-primary">
+                                        <input type="time" id="appt" name="appt">
+                                        <input type="date" id="myDate" value="2014-02-09">
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Message</label>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                                <button  class="button-cafe d-grid w-100">Book A Table</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pb-5">
+        <div class="container">
+            <div class="row d-lg-flex  align-items-lg-start">
+                <div class="col-md-6 col-xl-3">
+                    <div class="">
+                        <div class="logo">
+                            <a class="text-decoration-none" href="#"><img src="images/logo.png" alt="logo" class=""></a>
+                        </div>
+                        <div class="info">
+                            Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum
+                        </div>
+                        <div class="footer-icons mt-1">
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-instagram fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-square-facebook  fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-pinterest-p fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-primary p-1">
+                                <i class="fa-brands fa-twitter fa-xl" style="color: #6e4227;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="fs-2 text-primary text-start pt-2">Contect us</h5>
+                    <div class="footer-loc pt-3 mt-0 mt-sm-3">
+                        <span><i class="fa-solid fa-location-dot fa-xl" style="color: #6e4227;"></i></span>
+                        <span>638 Amarica Stranfod Mailbon Star<br> <span class="ms-4"> MAIL:
+                                Israfilsupol836@gmail.com</span></span>
+
+                    </div>
+                    <div class="footer-phone pt-3">
+                        <span><i class="fa-solid fa-phone-volume fa-lg" style="color: #6e4227;"></i></span>
+                        <span>
+                            +7464 0187 3535 645
+                        </span>
+                    </div>
+                    <div class="footer-cou pt-3">
+                        <span><i class="fa-solid fa-user-tie fa-xl" style="color: #6e4227;"></i></span>
+                        <span>+9 659459 49594</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="fs-2 text-primary text-start pt-2">Opening hours</h5>
+                    <div class="open-hour text-secondary d-flex pt-3 mt-0 mt-sm-3">
+                        <div class="">
+                            <span>Monday </span><br>
+                            <span> Tuesday </span><br>
+                            <span>wednesday </span><br>
+                            <span>Thusday </span><br>
+                            <span>Friday </span><br>
+                            <span>Saturday </span><br>
+                            <span>Sunday </span><br>
+                        </div>
+                        <div class="ms-5">
+                            <div class="monday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="tuesday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="wednesday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="Thusday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="Friday">
+                                9:00 AM - 11:30 PM
+                            </div>
+                            <div class="Saturday">
+                                9:00 AM - 9:00 AM
+                            </div>
+                            <div class="Sunday">
+                                9:00 AM - 2:30 AM
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="fs-2 text-primary text-start pt-2">Resent news</h5>
+                    <div class="d-flex pt-3 align-items-center mt-0 mt-sm-3">
+                        <div class="footer-img">
+                            <img src="images/footer-1.png" alt="footer-1">
+                            <div class="overlay">
+                                <img src="images/footer-3.png" alt="footer-3">
+                            </div>
+                        </div>
+                        <div class="fotter-containt text-body ms-3 fw-medium">
+                            <u>
+                                Best Smell of Americano
+                                Coffee Trins
+
+                            </u>
+                        </div>
+                    </div>
+                    <div class="d-flex pt-3 align-items-center">
+                        <div class="footer-img"><img src="images/footer-2.png" alt="footer-2">
+                            <div class="overlay">
+                                <img src="images/footer-4.png" alt="footer-4">
+                            </div>
+                        </div>
+                        <div class="fotter-containt text-body ms-3 fw-medium">
+                            <u>
+                                Serious Place For Serious
+                                Coffee
+                            </u>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

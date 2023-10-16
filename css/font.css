@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('../css/font.css') format('woff2'),
+        url('../css/font.css') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

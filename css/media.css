@@ -1,0 +1,47 @@
+/* xs */
+@media(max-width: 576px) {
+    header nav {
+        height: 80px;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    .categories .categ {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* sm */
+@media(min-width: 576px) {
+    header nav {
+        height: 80px;
+    }
+
+    header {
+        margin: 0;
+    }
+}
+
+/* md */
+@media(min-width: 768px) {}
+
+/* lg */
+@media(min-width: 992px) {
+    header nav {
+        height: 100px;
+    }
+
+    header {
+        margin-top: 60px;
+    }
+}
+
+/* xl */
+@media(min-width:1200px) {}
+
+/* xxl */
+@media(min-width:1400px) {}
